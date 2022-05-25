@@ -1,0 +1,70 @@
+<!-- show data binding one way-->
+<p>show data binding</p>
+<input value="{{name}}" />
+<br />
+
+<input [value]="name" type="text" />
+<input [value]="password" type="password" title="this is {{password}}" />
+
+<!-- data binding ngIf -->
+<input type="text" [(ngModel)]="this.age" />
+<h1 *ngIf="this.age > 15">đủ điều kiện</h1>
+<h1 *ngIf="this.age <= 15">không đủ điều kiện</h1>
+
+<!-- data binding two way -->
+<button (click)="resetName()">reset</button>
+
+<input type="text" [(ngModel)]="name" />
+<p>{{name}}</p>
+
+<!-- if then else -->
+<div *ngIf="age <=15">
+  <ng-template #elseBlock>
+    <h2>young</h2>
+  </ng-template>
+  <ng-template #old>
+    <h2>old</h2>
+  </ng-template>
+</div>
+
+<!-- use ngfor -->
+
+<div *ngFor="let listFruit of array; let i = index">
+  <li>{{i}} ->{{listFruit}}</li>
+</div>
+
+<div class="tableFruit">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Discount</th>
+    </tr>
+    <tr *ngFor="let listFruit of array1; let i = index">
+      <td>{{i}}</td>
+      <td>{{listFruit.nameFruit}}</td>
+      <td>
+        <span [ngClass]="{'avilabePrice': listFruit.price <0}"
+          >{{listFruit.price | currency:"VND":"symbol":"1.3"}}</span
+        >
+      </td>
+      <td>
+          <span>{{listFruit.discount | onSale}}</span>
+        <!-- <ng-template
+          [ngIf]="listFruit.discount == true"
+          [ngIfThen]="thenBlock"
+          [ngIfElse]="elseBlock"
+        >
+          zero
+        </ng-template>
+        <ng-template #thenBlock>
+         is true.
+        </ng-template>
+        <ng-template #elseBlock>
+           is false.
+        </ng-template> -->
+      </td>
+    </tr>
+  </table>
+</div>
