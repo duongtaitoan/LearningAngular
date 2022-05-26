@@ -1,6 +1,13 @@
-<div class="header">
-    <p>Welcome to home page </p>
-    <p>This is component Home</p>
-    <h1>Hello {{this.name}} </h1>
-    <app-login></app-login>
-</div>
+<h1 class="title">Welcome to angular Hello {{this.name}}</h1>
+  <nav>
+    <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
+    <br/>
+    <a [routerLink]="['/javascript']" routerLinkActive="active">Java Script</a>
+    <br/>
+    <a [routerLink]="['/city']" routerLinkActive="active">City</a>
+    <br/>
+    <a [routerLink]="['/about']" routerLinkActive="active">About</a>
+    <br/>
+    <a [routerLink]="['/form']" routerLinkActive="active">form</a>
+  </nav>
+  <router-outlet></router-outlet>

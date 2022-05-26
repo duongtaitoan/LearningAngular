@@ -9,6 +9,11 @@ import { LoginComponent } from './login/login.component';
 
 import { FormsModule } from '@angular/forms';
 import { OnSalePipe } from './on-sale.pipe';
+import { JavascriptComponent } from './javascript/javascript.component';
+import { SelectCityComponent } from './select-city/select-city.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HighLightDirective } from './about/directive/high-light.directive';
+import { DrivenFormComponent } from './driven-form/driven-form.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +21,17 @@ import { OnSalePipe } from './on-sale.pipe';
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    OnSalePipe
+    OnSalePipe,
+    JavascriptComponent,
+    SelectCityComponent,
+    PageNotFoundComponent,
+    HighLightDirective,
+    DrivenFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

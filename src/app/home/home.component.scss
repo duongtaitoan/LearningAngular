@@ -1,7 +1,24 @@
+*{
+    box-sizing: 0;
+}
 .header {
     border: 1px solid;
     padding: auto;
     box-shadow: 5px 4px bisque;
     inline-size: 15%;
-     text-align: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+.bodyProcess{
+    text-align: center;
+    box-shadow: 1px gainsboro;
+    border: 1px solid ;
+}
+
+.city{
+    margin-top: 5%;   
 }

@@ -1,0 +1,11 @@
+<p>select-city works!</p>
+
+<label for="cars">Choose a cities:</label>
+
+<select id="city" (change)="chooseCity($event)">
+  <option *ngFor=" let city of cities" value="{{city.city}}">{{city.city}}</option>
+</select>
+
+<select id="disctricts">
+    <option *ngFor=" let district of listDistricts" value="{{district}}">{{district}}</option>
+  </select>
