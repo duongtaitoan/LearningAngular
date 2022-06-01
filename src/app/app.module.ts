@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { OnSalePipe } from './on-sale.pipe';
@@ -16,6 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HighLightDirective } from './about/directive/high-light.directive';
 import { DrivenFormComponent } from './driven-form/driven-form.component';
 import { ReactFormComponent } from './react-form/react-form.component';
+import { RESTAPIGETComponent } from './rest-api-get/rest-api-get.component';
+import { RESTAPIPOSTComponent } from './rest-api-post/rest-api-post.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,16 @@ import { ReactFormComponent } from './react-form/react-form.component';
     PageNotFoundComponent,
     HighLightDirective,
     DrivenFormComponent,
-    ReactFormComponent
+    ReactFormComponent,
+    RESTAPIGETComponent,
+    RESTAPIPOSTComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

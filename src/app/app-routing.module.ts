@@ -1,3 +1,4 @@
+import { RESTAPIGETComponent } from './rest-api-get/rest-api-get.component';
 import { ReactFormComponent } from './react-form/react-form.component';
 import { DrivenFormComponent } from "./driven-form/driven-form.component";
 import { AboutComponent } from "./about/about.component";
@@ -8,6 +9,7 @@ import { HomeComponent } from "./home/home.component";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { RESTAPIPOSTComponent } from './rest-api-post/rest-api-post.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "form", component: DrivenFormComponent },
   { path: "react", component: ReactFormComponent },
+  { path: "get", component: RESTAPIGETComponent },
+  { path: "post", component: RESTAPIPOSTComponent},
   { path: "", component: HomeComponent },
   { path: "**", component: PageNotFoundComponent },
 ];
