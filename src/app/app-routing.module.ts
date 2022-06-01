@@ -1,3 +1,5 @@
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 import { RESTAPIGETComponent } from './rest-api-get/rest-api-get.component';
 import { ReactFormComponent } from './react-form/react-form.component';
 import { DrivenFormComponent } from "./driven-form/driven-form.component";
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: "react", component: ReactFormComponent },
   { path: "get", component: RESTAPIGETComponent },
   { path: "post", component: RESTAPIPOSTComponent},
+  { path: "parent", component: ParentComponent},
+  { path: "child", component: ChildComponent},
   { path: "", component: HomeComponent },
   { path: "**", component: PageNotFoundComponent },
 ];

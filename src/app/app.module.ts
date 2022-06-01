@@ -19,6 +19,8 @@ import { DrivenFormComponent } from './driven-form/driven-form.component';
 import { ReactFormComponent } from './react-form/react-form.component';
 import { RESTAPIGETComponent } from './rest-api-get/rest-api-get.component';
 import { RESTAPIPOSTComponent } from './rest-api-post/rest-api-post.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { RESTAPIPOSTComponent } from './rest-api-post/rest-api-post.component';
     DrivenFormComponent,
     ReactFormComponent,
     RESTAPIGETComponent,
-    RESTAPIPOSTComponent
+    RESTAPIPOSTComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<p>parent works!</p>
+
+<p>{{smsParent}}</p>
+<button (click)="gift()">gift</button>
+<br/>
+<app-child #teos name="teo" (callChild)="callChild($event)"></app-child>
+<br/>
+<app-child #tis name="ti" (callChild)="callChild($event)"></app-child>
