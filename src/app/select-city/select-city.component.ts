@@ -58,7 +58,7 @@ export class SelectCityComponent implements OnInit {
       return;
     }
 
-    // check abstract compare with listcities 
+    // check abstract compare with list cities 
     this.listDistricts = this.cities.find(compare => compare.city === checkCity)?.districts || [];
 
   }

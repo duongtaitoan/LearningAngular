@@ -1,4 +1,5 @@
-import { DrivenFormComponent } from './driven-form/driven-form.component';
+import { ReactFormComponent } from './react-form/react-form.component';
+import { DrivenFormComponent } from "./driven-form/driven-form.component";
 import { AboutComponent } from "./about/about.component";
 import { SelectCityComponent } from "./select-city/select-city.component";
 import { JavascriptComponent } from "./javascript/javascript.component";
@@ -14,16 +15,11 @@ const routes: Routes = [
   {
     path: "javascript",
     component: JavascriptComponent,
-    // children: [
-    //   {
-    //     path: "about", // child route path
-    //     component: AboutComponent, // child route component that the router renders
-    //   },
-    // ],
   },
   { path: "city", component: SelectCityComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'form', component: DrivenFormComponent },
+  { path: "about", component: AboutComponent },
+  { path: "form", component: DrivenFormComponent },
+  { path: "react", component: ReactFormComponent },
   { path: "", component: HomeComponent },
   { path: "**", component: PageNotFoundComponent },
 ];

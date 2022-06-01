@@ -19,8 +19,8 @@ export class CommonService {
     return this.counter;
   }
   
-  public sendData(data:any):void{
-    console.log("send data for services: "+data);
+  public submitData(data:any):void{
+    console.log("submit data in services: ", data);
   }
 
 }

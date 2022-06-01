@@ -15,7 +15,7 @@ export class DrivenFormComponent implements OnInit {
   }
 
   public sendData():void{
-    this.common.sendData(this.name);
+    this.common.submitData(this.name);
   }
 
 }
